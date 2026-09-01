@@ -192,7 +192,7 @@ async def fetch_codeforces_history_loop():
                 if data.get("status") == "OK":
                     all = data['result']
                     relevant = [item for item in all if item["verdict"]=="OK"]
-                    folder = Path(r"C:\Users\Rishav\Shruti\lib\memory")
+                    folder = Path(r"C:\Users\Rishav\JARVIS\lib\memory")
                     folder.mkdir(parents=True, exist_ok=True)
                     file = folder/"recent_submission.json"
                     with open(file, "w") as f:

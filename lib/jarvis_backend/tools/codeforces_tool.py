@@ -26,7 +26,7 @@ qdrant_client = QdrantClient(
 # Helper Functions
 # ==========================================
 
-def embedding_model(content_: str = "Hey, Shruti!") -> list:
+def embedding_model(content_: str = "Hey, JARVIS!") -> list:
     """Generates embeddings using Google GenAI."""
     genai_client = genai.Client(api_key=os.getenv("CAL_KEY"))
     result = genai_client.models.embed_content(

@@ -5,10 +5,10 @@ credentials1.json
 token.json
 lib/memory/specific_question.json
 lib/memory/recent_submission.json
-lib/shruti_ui/windows/flutter/ephemeral/
+lib/jarvis_ui/windows/flutter/ephemeral/
 **/ephemeral/
-lib/shruti_backend/dist
-lib/shruti_backend/build
-lib/shruti_backend/interact.spec
+lib/jarvis_backend/dist
+lib/jarvis_backend/build
+lib/jarvis_backend/interact.spec
 lib/__pycache__
 .vscode

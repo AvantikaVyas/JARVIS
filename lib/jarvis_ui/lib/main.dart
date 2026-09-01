@@ -6,16 +6,16 @@ import 'dart:ui';
 import 'dart:math' as math;
 
 void main() {
-  runApp(const ShrutiApp());
+  runApp(const JARVISApp());
 }
 
-class ShrutiApp extends StatelessWidget {
-  const ShrutiApp({super.key});
+class JARVISApp extends StatelessWidget {
+  const JARVISApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Shruti Voice Assistant',
+      title: 'JARVIS Voice Assistant',
       theme: ThemeData.light().copyWith(
         primaryColor: const Color(0xFFFFB300), // Amber accent
       ),
@@ -72,7 +72,7 @@ class _SplashScreenState extends State<SplashScreen>
       context,
       PageRouteBuilder(
         pageBuilder: (context, animation, secondaryAnimation) =>
-            FadeTransition(opacity: animation, child: const ShrutiHomeScreen()),
+            FadeTransition(opacity: animation, child: const JARVISHomeScreen()),
         transitionDuration: const Duration(milliseconds: 600),
       ),
     );
@@ -172,7 +172,7 @@ class _SplashScreenState extends State<SplashScreen>
                         ),
                         const SizedBox(height: 24),
                         const Text(
-                          'SHRUTI',
+                          'JARVIS',
                           style: TextStyle(
                             fontSize: 50,
                             fontFamily: 'Samarkan',
@@ -271,14 +271,14 @@ class CurtainClipper extends CustomClipper<Path> {
 // 1. THE HOME SCREEN WIDGET
 // ==========================================
 
-class ShrutiHomeScreen extends StatefulWidget {
-  const ShrutiHomeScreen({super.key});
+class JARVISHomeScreen extends StatefulWidget {
+  const JARVISHomeScreen({super.key});
 
   @override
-  State<ShrutiHomeScreen> createState() => _ShrutiHomeScreenState();
+  State<JARVISHomeScreen> createState() => _JARVISHomeScreenState();
 }
 
-class _ShrutiHomeScreenState extends State<ShrutiHomeScreen>
+class _JARVISHomeScreenState extends State<JARVISHomeScreen>
     with TickerProviderStateMixin {
   late WebSocketChannel _channel;
   String _status = 'idle';
@@ -624,7 +624,7 @@ class _ShrutiHomeScreenState extends State<ShrutiHomeScreen>
                   children: [
                     // Header
                     const Text(
-                      'SHRUTI',
+                      'JARVIS',
                       style: TextStyle(
                         fontSize: 50,
                         fontFamily: 'Samarkan', // Uses your new custom font
