@@ -17,4 +17,3 @@ Flutter/Dart → API → Python backend → AI model
 Tech Stack
 Frontend: Flutter, Dart
 Backend: Python
-AI: ...
